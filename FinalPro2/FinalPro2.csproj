@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68FC527C-40E7-4A7D-839C-2326B0DF7F2C}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FinalPro2</RootNamespace>
+    <AssemblyName>FinalPro2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>FinalPro2.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>FinalPro2.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Article.cs" />
+    <Compile Include="Articles.cs" />
+    <Compile Include="CATNewsPage.xaml.cs">
+      <DependentUpon>CATNewsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DetailNews.cs" />
+    <Compile Include="Detailnews.xaml.cs">
+      <DependentUpon>Detailnews.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DetailQues.cs" />
+    <Compile Include="Detailques.xaml.cs">
+      <DependentUpon>Detailques.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpdocument.xaml.cs">
+      <DependentUpon>Helpdocument.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelpPage1.xaml.cs">
+      <DependentUpon>HelpPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="que.cs" />
+    <Compile Include="QueOpt.xaml.cs">
+      <DependentUpon>QueOpt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ques.cs" />
+    <Compile Include="QuestionADayPage.xaml.cs">
+      <DependentUpon>QuestionADayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StartPage1.xaml.cs">
+      <DependentUpon>StartPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TestType.xaml.cs">
+      <DependentUpon>TestType.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Topper.cs" />
+    <Compile Include="TopperPage.xaml.cs">
+      <DependentUpon>TopperPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Toppers.cs" />
+    <Compile Include="TopperSay.cs" />
+    <Compile Include="ToppersSayPage.xaml.cs">
+      <DependentUpon>ToppersSayPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="CATNewsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Detailnews.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Detailques.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Helpdocument.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HelpPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QueOpt.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="QuestionADayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StartPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TestType.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TopperPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToppersSayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\CATapp.png" />
+    <Resource Include="Images\take.png" />
+    <Resource Include="Images\take1.png" />
+    <Resource Include="Images\take3.png" />
+    <Resource Include="Images\take4.png" />
+    <Resource Include="Images\take5.png" />
+    <Resource Include="Images\take6.png" />
+    <Resource Include="Images\iw1.png" />
+    <Resource Include="Images\news_blue.png" />
+    <Resource Include="Images\news.png" />
+    <Resource Include="Images\about.png" />
+    <Resource Include="Images\about_blue.png" />
+    <Resource Include="Images\home.png" />
+    <Resource Include="Images\home_action.png" />
+    <Resource Include="Images\home_blue.png" />
+    <Resource Include="Images\queaday.png" />
+    <Resource Include="Images\queaday_blue.png" />
+    <Resource Include="Images\toppersay.png" />
+    <Resource Include="Images\toppersay_blue.png" />
+    <Resource Include="Images\attempt_list_blue.png" />
+    <Resource Include="Images\attempt_list_grey.png" />
+    <Resource Include="Images\category.png" />
+    <Resource Include="Images\category_blue.png" />
+    <Resource Include="Images\help_doc_blue.png" />
+    <Resource Include="Images\help_doc_grey.png" />
+    <Resource Include="Images\help_vid_blue.png" />
+    <Resource Include="Images\help_vid_grey.png" />
+    <Resource Include="Images\hint.png" />
+    <Resource Include="Images\hint_blue.png" />
+    <Resource Include="Images\icon.png" />
+    <Resource Include="Images\ic_action_submit.png" />
+    <Resource Include="Images\ic_action_submit_grey.png" />
+    <Resource Include="Images\ic_menu_search.png" />
+    <Resource Include="Images\ic_stat_notify.png" />
+    <Resource Include="Images\lockans32.png" />
+    <Resource Include="Images\question.png" />
+    <Resource Include="Images\question_blue.png" />
+    <Resource Include="Images\solution_tab.png" />
+    <Resource Include="Images\solution_tab_blue.png" />
+    <Resource Include="Images\summary_blue.png" />
+    <Resource Include="Images\summary_grey.png" />
+    <Resource Include="Images\attempted.png" />
+    <Resource Include="Images\attempted_marked.png" />
+    <Resource Include="Images\edit_item_selected.png" />
+    <Resource Include="Images\ic_action_search.png" />
+    <Resource Include="Images\notattempted.png" />
+    <Resource Include="Images\notattempted_marked.png" />
+    <Resource Include="Images\store_active.png" />
+    <Resource Include="Images\store_default.png" />
+    <Resource Include="Images\submit.png" />
+    <Resource Include="Images\submit_white.png" />
+    <Resource Include="Images\wait.png" />
+    <Resource Include="Images\accept.png" />
+    <Resource Include="Images\catapplogo.png" />
+    <Resource Include="Images\catapplogoabout.png" />
+    <Resource Include="Images\catapplogosplash.png" />
+    <Resource Include="Images\cloud.png" />
+    <Resource Include="Images\darklining_bg.png" />
+    <Resource Include="Images\defaultlogo.png" />
+    <Resource Include="Images\device.png" />
+    <Resource Include="Images\device_h.png" />
+    <Resource Include="Images\existing_user.png" />
+    <Resource Include="Images\handmadepaper.png" />
+    <Resource Include="Images\helpvideo.png" />
+    <Resource Include="Images\help_blue.png" />
+    <Resource Include="Images\help_grey.png" />
+    <Resource Include="Images\help_video_image.png" />
+    <Resource Include="Images\highlight_lining_bg.png" />
+    <Resource Include="Images\ic_menu_moreoverflow_normal_holo_light.png" />
+    <Resource Include="Images\ic_popup_sync_1.png" />
+    <Resource Include="Images\iwlogorbg.png" />
+    <Resource Include="Images\iw_logo.png" />
+    <Resource Include="Images\likefb_blue.png" />
+    <Resource Include="Images\likefb_grey.png" />
+    <Resource Include="Images\lining_bg.png" />
+    <Resource Include="Images\loading.gif" />
+    <Resource Include="Images\lockans.png" />
+    <Resource Include="Images\mark_for_analysis.png" />
+    <Resource Include="Images\navigation_collapse.png" />
+    <Resource Include="Images\navigation_expand.png" />
+    <Resource Include="Images\new_user.png" />
+    <Resource Include="Images\nextque.png" />
+    <Resource Include="Images\nonhighlight_lining_bg.png" />
+    <Resource Include="Images\prevque.png" />
+    <Resource Include="Images\progress_blue.png" />
+    <Resource Include="Images\progress_grey.png" />
+    <Resource Include="Images\questionmark.png" />
+    <Resource Include="Images\setting_blue.png" />
+    <Resource Include="Images\setting_grey.png" />
+    <Resource Include="Images\shopping_blue.png" />
+    <Resource Include="Images\shopping_grey.png" />
+    <Resource Include="Images\smallstar.png" />
+    <Resource Include="Images\smallstar_empty.png" />
+    <Resource Include="Images\social_share.png" />
+    <Resource Include="Images\solution_blue.png" />
+    <Resource Include="Images\solution_grey.png" />
+    <Resource Include="Images\sort_ascending.png" />
+    <Resource Include="Images\sort_descending.png" />
+    <Resource Include="Images\star.png" />
+    <Resource Include="Images\star_empty.png" />
+    <Resource Include="Images\store_orange.png" />
+    <Resource Include="Images\take_test_black.png" />
+    <Resource Include="Images\take_test_blue.png" />
+    <Resource Include="Images\take_test_grey.png" />
+    <Resource Include="Images\unmark_for_analysis.png" />
+    <Resource Include="Images\year.png" />
+    <Resource Include="Images\year_blue.png" />
+    <Content Include="help.htm" />
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
